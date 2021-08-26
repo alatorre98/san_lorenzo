@@ -292,17 +292,17 @@ header {
 }
 
 .location1 {
-    background: url(./../images/san_lorenzo1.jpg) center no-repeat;
+    background: url(/../images/san_lorenzo1.jpg) center no-repeat;
     background-size: cover;
 }
 
 .location2 {
-    background: url(./../images/san_lorenzo2.jpg) center no-repeat;
+    background: url(/../images/san_lorenzo2.jpg) center no-repeat;
     background-size: cover;
 }
 
 .location3 {
-    background: url(./../images/taqueria.jpg) center no-repeat;
+    background: url(/../images/taqueria.jpg) center no-repeat;
     background-size: cover;
 }
 
