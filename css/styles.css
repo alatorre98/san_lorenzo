@@ -249,7 +249,6 @@ header {
     transition: background-color .5s;
 }
 
-.cta-btn:hover,
 .cta-btn:hover {
     background-color: #fff5d6;
     color: #632130;
@@ -259,10 +258,11 @@ header {
 
 .cards {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8rem;
     overflow: hidden;
     background-color: #d7dac5;
 }
@@ -276,19 +276,78 @@ header {
     border-radius: 18px;
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .card-img {
     grid-area: image;
-    background: url(./images/san_lorenzo1.jpg) center no-repeat;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.card-location {
-    grid-area: location;
+.location1 {
+    background: url(./images/san_lorenzo1.jpg) center no-repeat;
+    background-size: cover;
 }
 
-.card-menu {
+.location2 {
+    background: url(./images/san_lorenzo2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.location3 {
+    background: url(./images/taqueria.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card-location {
+    grid-area: location;
+    text-align: center;
+    margin: auto;
+}
+
+.card-location h2 {
+    font-size: 1.5rem;
+    line-height: 10px;
+}
+
+.card-location h3 {
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.card-location h4 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #632130;
+}
+
+.card-map {
     grid-area: map;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #632130;
+}
+
+.card-map .location1-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff5d6;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.click {
+    font-size: .7rem;
+}
+
+.card-ctn:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
